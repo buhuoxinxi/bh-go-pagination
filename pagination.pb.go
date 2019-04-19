@@ -12,7 +12,7 @@ It has these top-level messages:
 	PagingOrder
 	PagingResult
 */
-package pagination
+package bhpagination
 
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"

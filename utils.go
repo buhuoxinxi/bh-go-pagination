@@ -1,4 +1,4 @@
-package pagination
+package bhpagination
 
 // StringToCamel : string to camel , xx_yy to XxYy
 func StringToCamel(s string) string {
