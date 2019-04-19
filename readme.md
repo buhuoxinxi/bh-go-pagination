@@ -2,10 +2,6 @@
 
 捕获科技 pagination 工具
 
-## config
-
-see ./testdata/config.go
-
 ## dev environment
 
 go version
