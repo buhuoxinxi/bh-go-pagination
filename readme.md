@@ -16,6 +16,13 @@ mysql version
 
 > 5.7
 
+## protobuf
+
+run command
+
+```bash
+protoc -I. -I$GOPATH/src --go_out=. ./*.proto
+```
 
 ## test 
 
