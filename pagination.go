@@ -707,6 +707,14 @@ func SetPagingResult(optionCollection *PagingOptionCollection, resultCollection 
 		pagingResult.LastPage = resultCollection.TotalRecords/pagingOption.PageSize + 1
 	}
 
+	// current page
+	if pagingResult.CurrentPage > pagingResult.LastPage {
+		pagingResult.CurrentPage = pagingResult.LastPage
+	}
+
+	// has next page
+	pagingResult.HasNextPage = pagingResult.LastPage > pagingResult.CurrentPage
+
 	// calc ResultSlice
 	sliceInfo, err := DefaultCalcResultSliceHandler(optionCollection, resultCollection)
 	if err != nil {

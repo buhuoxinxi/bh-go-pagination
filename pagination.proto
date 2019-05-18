@@ -62,6 +62,7 @@ message PagingOrder {
  * @apiSuccess (PagingResult) {Int64} ShowFrom current page show from - to records
  * @apiSuccess (PagingResult) {Int64} ShowTo current page show from - to records
  * @apiSuccess (PagingResult) {Int64} LastPage last page
+ * @apiSuccess (PagingResult) {Bool} HasNextPage has next page
  *
  * @apiSuccess (PagingResult) {Array} OrderBy order by
  *
@@ -81,6 +82,7 @@ message PagingResult {
     int64 ShowFrom = 103; // current page show from - to records
     int64 ShowTo = 104; // current page show from - to records
     int64 LastPage = 105; // last page
+    bool HasNextPage = 106; // has next page
     // order by
     repeated PagingOrder OrderBy = 200; // order by
     // cursor mode
